@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NYSL</title>
+    <link rel="stylesheet" href="styles/nysl_.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div>
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#rules">NYSL Rules</a></li>
+            <li><a href="index.html#schedule">Schedule</a></li>
+            <li><a id="current">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="headertitle-not-index">
+        <div class="logo">
+          <img src="../NYSLSprint1/sprint2/soccer-logo.png" alt="NYSL Logo" />
+        </div>
+        <div class="cta-rules">
+          <h1>Register for a Team</h1>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="register">
+        <form id="nyslform" action="show_data.html" method="GET">
+          <table>
+            <tr>
+              <td><span>First name:*</span></td>
+              <td>
+                <input
+                  type="text"
+                  name="First-name"
+                  value="first-name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><span>Last name:*</span></td>
+              <td>
+                <input
+                  type="text"
+                  name="Last-name"
+                  value="last-name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Gender</td>
+              <td>
+                <input type="radio" name="Gender" value="male" checked />
+                <span>Male</span><br />
+                <input type="radio" name="Gender" value="female" />
+                <span>Female</span><br />
+                <input type="radio" name="Gender" value="other" /><span
+                  >Other</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><span>Contact-Email:*</span></td>
+              <td>
+                <input type="email" name="Email" value="email" required />
+              </td>
+            </tr>
+            <tr>
+              <td><span>Contact-Phone:*</span></td>
+              <td>
+                <input
+                  type="number"
+                  name="Phone"
+                  placeholder="1234567"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><span>Birthday:*</span></td>
+              <td><input type="date" name="Birthday" required /></td>
+            </tr>
+            <tr>
+              <td><span>Parent name/Guardian:*</span></td>
+              <td>
+                <input
+                  type="text"
+                  name="Parent-name"
+                  value="parent-name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><span>Street*</span></td>
+              <td>
+                <input type="text" name="Street" value="street" required />
+              </td>
+            </tr>
+            <tr>
+              <td><span>City*</span></td>
+              <td><input type="text" name="City" value="city" required /></td>
+            </tr>
+            <tr>
+              <td><span>ZIP code*</span></td>
+              <td><input type="number" name="ZIP" value="12345" required /></td>
+            </tr>
+            <tr class="reg-section1">
+              <td colspan="2">
+                <span>Which elementary schools do you live near?</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>First Closest School:</span>
+              </td>
+              <td>
+                <select name="Fav-school1">
+                  <option value="none">--none--</option>
+                  <option value="aj-katzenmaier">AJ Katzenmaier</option>
+                  <option value="marjorie-p-hart">Marjorie P Hart</option>
+                  <option value="north-elementary">North Elementary</option>
+                  <option value="south-elementary">South Elementary</option>
+                  <option value="greenbay">Greenbay</option>
+                  <option value="howard-a-yeager">Howard A Yeager</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><span>Second Closest School:</span></td>
+              <td>
+                <select
+                  ><option value="none">--none--</option>
+                  <option value="aj-katzenmaier">AJ Katzenmaier</option>
+                  <option value="marjorie-p-hart">Marjorie P Hart</option>
+                  <option value="north-elementary">North Elementary</option>
+                  <option value="south-elementary">South Elementary</option>
+                  <option value="greenbay">Greenbay</option>
+                  <option value="howard-a-yeager">Howard A Yeager</option>
+                </select>
+              </td>
+            </tr>
+            <tr class="reg-section1">
+              <td colspan="2">
+                <span>Position</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span
+                  >What position(s) do you normally play?<br />(check all that
+                  apply)</span
+                >
+              </td>
+              <td>
+                <input type="checkbox" name="Position" value="forward" />
+                <span>Forward</span><br />
+                <input type="checkbox" name="Position" value="midfield" />
+                <span>Midfield</span><br />
+                <input type="checkbox" name="Position" value="goalkeeper" />
+                <span>Goalkeeper</span><br />
+                <input type="checkbox" name="Position" value="defense" />
+                <span>Defense</span><br />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span
+                  >What position(s) do you want play?<br />(check all that
+                  apply)</span
+                >
+              </td>
+              <td>
+                <input type="checkbox" name="Position" value="forward" />
+                <span>Forward</span><br />
+                <input type="checkbox" name="Position" value="midfield" />
+                <span>Midfield</span><br />
+                <input type="checkbox" name="Position" value="goalkeeper" />
+                <span>Goalkeeper</span><br />
+                <input type="checkbox" name="Position" value="defense" />
+                <span>Defense</span>
+              </td>
+            </tr>
+            <tr class="reg-section1">
+              <td colspan="2">
+                <span>Uniform</span>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input type="checkbox" name="uniform" value="uniform" /><span
+                  >I Already have a uniform</span
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><span>Need Uniform:</span><br /><span>Jersey Size:</span></td>
+              <td>
+                <input type="checkbox" name="Jersey-Size" value="y-small" />
+                <span>Youth Small</span><br />
+                <input type="checkbox" name="Jersey-Size" value="y-medium" />
+                <span>Youth Medium</span><br />
+                <input type="checkbox" name="Jersey-Size" value="y-large" />
+                <span>Youth Large</span><br />
+                <input type="checkbox" name="Jersey-Size" value="small" />
+                <span>Small</span><br />
+                <input type="checkbox" name="Jersey-Size" value="medium" />
+                <span>Medium</span><br />
+                <input type="checkbox" name="Jersey-Size" value="large" />
+                <span>Large</span><br />
+                <input type="checkbox" name="Jersey-Size" value="x-large" />
+                <span>Extra-Large</span> <br />
+              </td>
+            </tr>
+            <tr>
+              <td><span>Shorts Size:</span></td>
+              <td>
+                <input type="checkbox" name="Jersey-Size" value="y-small" />
+                <span>Youth Small</span><br />
+                <input type="checkbox" name="Jersey-Size" value="y-medium" />
+                <span>Youth Medium</span><br />
+                <input type="checkbox" name="Jersey-Size" value="y-large" />
+                <span>Youth Large</span><br />
+                <input type="checkbox" name="Jersey-Size" value="small" />
+                <span>Small</span><br />
+                <input type="checkbox" name="Jersey-Size" value="medium" />
+                <span>Medium</span><br />
+                <input type="checkbox" name="Jersey-Size" value="large" />
+                <span>Large</span><br />
+                <input type="checkbox" name="Jersey-Size" value="x-large" />
+                <span>Extra-Large</span> <br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><span>* fields are required</span></td>
+            </tr>
+            <tr>
+              <td colspan="2" class="reg-buttons">
+                <input class="submit" type="submit" value="Submit" />
+                <input class="submit" type="reset" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Copyright NYSL 2020 ©</p>
+      </div>
+    </footer>
+  </body>
+</html>

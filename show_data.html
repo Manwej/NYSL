@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NYSL</title>
+    <link rel="stylesheet" href="styles/nysl_3.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Feedback Sent</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div>
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#rules">NYSL Rules</a></li>
+            <li><a href="index.html#schedule">Schedule</a></li>
+            <li><a id="current">Register</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="headertitle-not-index">
+        <div class="logo">
+          <img src="../NYSLSprint1/sprint2/soccer-logo.png" alt="NYSL Logo" />
+        </div>
+        <div class="cta-rules">
+          <h1>Register for a Team</h1>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <p align="center">&nbsp;</p>
+      <h1 align="center">
+        <font size="+1"
+          >The following information has been sent as your feedback:</font
+        >
+      </h1>
+      <div class="table">
+        <table border="1" align="center" width="226">
+          <tr>
+            <th align="center">Form Field</th>
+            <th align="center">Field Value</th>
+          </tr>
+
+          <script language="javascript">
+            var args = location.search.substr(1).split("&");
+            for (var i = 0; i < args.length; ++i) {
+              var parts = args[i].split("=");
+              if (parts != null) {
+                var field = parts[0];
+                var value = parts[1];
+                if (value == null) {
+                  value = "null";
+                } else {
+                  value = '"' + unescape(value.replace(/\+/g, " ")) + '"';
+                }
+
+                document.writeln('<tr><td align="center">' + field + "</td>");
+                document.writeln('<td align="center">' + value + "</td></tr>");
+              }
+            }
+          </script>
+
+          <noscript>
+            <tr>
+              <td>
+                <p>You need to turn on Javascript in your browser.</p>
+
+                <p>In Microsoft Internet Explorer 4 or greater:</p>
+                <ul>
+                  <li>
+                    From the "Tools" menu (in IE 4, it's the "View" menu),
+                    select "Internet Options".
+                  </li>
+                  <li>Click on the "Security" tab.</li>
+                  <li>
+                    Click on the "Custom Level" button. (In IE 4, select
+                    "Custom" and then click on "Settings...".)
+                  </li>
+                  <li>
+                    Under "Active scripting" make sure "Enable" is selected.
+                  </li>
+                </ul>
+
+                <p>In Netscape version 4 or greater:</p>
+                <ul>
+                  <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                  <li>
+                    In the <b>Category</b> list on the left, click on the word
+                    "Advanced".
+                  </li>
+                  <li>
+                    In the panel on the right, make sure "Enable JavaScript" is
+                    checked.
+                  </li>
+                  <li>Click the <b>OK</b> button.</li>
+                </ul>
+              </td>
+            </tr>
+          </noscript>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>Copyright NYSL 2020 ©</p>
+      </div>
+    </footer>
+  </body>
+</html>
