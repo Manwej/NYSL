@@ -5,28 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NYSL</title>
-    <link rel="stylesheet" href="styles/nysl_.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/nysl_3.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <div class="container" id="container">
-      <div>
-        <div class="nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#rules">NYSL Rules</a></li>
-            <li><a href="index.html#schedule">Schedule</a></li>
-            <li><a id="current">Register</a></li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary navstyle">
+      <a class="navbar-brand" href="#">NYSL</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#rules" >NYSL Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="/index.html#schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
       </div>
       <div class="headertitle-not-index">
         <div class="logo">
-          <img src="../NYSLSprint1/sprint2/soccer-logo.png" alt="NYSL Logo" />
+          <img src="sprint2/soccer-logo.png" alt="NYSL Logo" />
         </div>
         <div class="cta-rules">
           <h1>Register for a Team</h1>
@@ -42,8 +58,7 @@
               <td>
                 <input
                   type="text"
-                  name="First-name"
-                  value="first-name"
+                  placeholder="First-name"
                   required
                 />
               </td>
@@ -53,8 +68,8 @@
               <td>
                 <input
                   type="text"
-                  name="Last-name"
-                  value="last-name"
+                  placeholder="Last-name"
+                  
                   required
                 />
               </td>
@@ -74,7 +89,7 @@
             <tr>
               <td><span>Contact-Email:*</span></td>
               <td>
-                <input type="email" name="Email" value="email" required />
+                <input type="email" placeholder="Email@idk.com" required />
               </td>
             </tr>
             <tr>
@@ -97,8 +112,8 @@
               <td>
                 <input
                   type="text"
-                  name="Parent-name"
-                  value="parent-name"
+                  placeholder="Parent-name"
+                  
                   required
                 />
               </td>
@@ -106,16 +121,16 @@
             <tr>
               <td><span>Street*</span></td>
               <td>
-                <input type="text" name="Street" value="street" required />
+                <input type="text" placeholder="Street"  required />
               </td>
             </tr>
             <tr>
               <td><span>City*</span></td>
-              <td><input type="text" name="City" value="city" required /></td>
+              <td><input type="text" placeholder="City"  required /></td>
             </tr>
             <tr>
               <td><span>ZIP code*</span></td>
-              <td><input type="number" name="ZIP" value="12345" required /></td>
+              <td><input type="number" placeholder="ZIP"  required /></td>
             </tr>
             <tr class="reg-section1">
               <td colspan="2">
@@ -249,8 +264,8 @@
             </tr>
             <tr>
               <td colspan="2" class="reg-buttons">
-                <input class="submit" type="submit" value="Submit" />
-                <input class="submit" type="reset" />
+                <input class=" btn-primary" type="submit" value="Submit" />
+                <input class=" btn-primary" type="reset" />
               </td>
             </tr>
           </table>
